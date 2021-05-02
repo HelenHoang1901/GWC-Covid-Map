@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Should I?</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class = "banner">
+        <div class="navbar">
+          <ul>
+            <li><button1 onclick="window.location.href='index.html'"type="button">HOME</button1></li>
+          </ul>
+          <div class = "content">
+          <h2> Enter the zip code</h2>
+          <input type="text" id="fname"><br><br>
+          <div>
+            <button onclick="window.location.href='index.html'"type="button">RETURN</button>
+            <button onclick="myFunction()""type="button">SEARCH</button>
+          </div>
+          <script>
+          function myFunction() {
+            if (document.getElementById('fname').value == '94132') {
+              window.location.href = "Page3.html";
+            }
+            else {
+              window.location.href = "Page5.html";
+            }
+          };
+          </script>
+    </div>
+  </body>
+  </head>
+</html>
